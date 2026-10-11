@@ -36,3 +36,5 @@ dist-ssr
 rcms-app-main/
 package-for-netlify.ps1
 .system_generated/
+.github/
+.github_backup/
