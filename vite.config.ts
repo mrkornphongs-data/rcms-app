@@ -18,6 +18,6 @@ export default defineConfig({
     },
   },
   nitro: {
-    preset: process.env.NETLIFY ? "netlify" : undefined,
+    preset: "netlify",
   },
 });

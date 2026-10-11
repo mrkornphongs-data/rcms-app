@@ -8,10 +8,13 @@
   NODE_VERSION = "22"
   NPM_FLAGS = "--legacy-peer-deps"
 
-# Client Routing: ทุกเส้นทางส่งกลับมาที่ index สำหรับ Client Routing
+[functions]
+  directory = ".netlify/functions-internal"
+
+# Serverless SSR Handler
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/server"
   status = 200
 
 # Security Headers
