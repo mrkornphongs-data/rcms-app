@@ -18,6 +18,9 @@
   "overrides": {
     "rolldown": "1.2.1"
   },
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@prisma/client": "^6.16.2",
