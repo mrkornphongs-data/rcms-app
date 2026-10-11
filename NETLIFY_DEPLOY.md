@@ -8,7 +8,7 @@
 
 1. **แตกไฟล์ Zip หรือ Push โปรเจกต์ขึ้น GitHub**:
    - นำไฟล์ทั้งหมดในโปรเจกต์นี้ขึ้น GitHub Repository ของคุณ (ทั้งแบบ Public หรือ Private)
-   *(ไม่ต้องอัปโหลดโฟลเดอร์ `node_modules` หรือ `.output`)*
+   *(ไม่ต้องอัปโหลดโฟลเดอร์ `node_modules` หรือ `dist`)*
 
 2. **เชื่อมต่อกับ Netlify**:
    - เข้าสู่ระบบ [https://app.netlify.com/](https://app.netlify.com/)
@@ -19,7 +19,7 @@
    Netlify จะอ่านค่าจากไฟล์ `netlify.toml` ให้อัตโนมัติ:
    - **Base directory**: *(ปล่อยว่าง)*
    - **Build command**: `npm run build`
-   - **Publish directory**: `.output/public`
+   - **Publish directory**: `dist`
    - **Environment Variables**:
      - `NODE_VERSION`: `22` (หรือ `20`)
 
@@ -44,7 +44,7 @@ npm run build
 netlify login
 
 # 4. ทำการ Deploy ขึ้น Netlify ทันที
-netlify deploy --prod --dir=.output/public
+netlify deploy --prod --dir=dist
 ```
 
 ---
